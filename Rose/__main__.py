@@ -78,6 +78,13 @@ async def start_bot():
 
 home_keyboard_pm = InlineKeyboardMarkup(
     [
+        
+        [
+            InlineKeyboardButton(
+                text=" ➕ Add Me To Your Group ➕ ",
+                url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text="📚 Commands & help", callback_data="bot_commands"
@@ -95,12 +102,6 @@ home_keyboard_pm = InlineKeyboardMarkup(
             InlineKeyboardButton(
                 text="📓 Documentation",
                 url=f"https://batbin.me/rhebok",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=" ➕ Add Me To Your Group ➕ ",
-                url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
     ]
